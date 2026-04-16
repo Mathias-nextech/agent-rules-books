@@ -17,6 +17,15 @@ The repository is organized as:
   claude/.claude/rules/<book>.md
 ```
 
+The repository also includes a synthesized default rule set:
+
+```text
+unified-software-engineering/
+  codex/AGENTS.md
+  cursor/.cursor/rules/unified-software-engineering.mdc
+  claude/.claude/rules/unified-software-engineering.md
+```
+
 ## Books
 
 ### A Philosophy of Software Design
@@ -97,6 +106,14 @@ Author: Michael Feathers
 
 The book explains how to safely change difficult, poorly tested code: characterization tests, seams, dependency breaking, sprout method, wrap method, and incremental risk reduction. This rule set is best for legacy work where the first goal is regaining control.
 
+## Unified Rule Set
+
+`unified-software-engineering` is a synthesized rule set that combines the unique principles from all supported books into one coherent agent instruction file.
+
+It is not a concatenation of the book-specific rules. Repeated guidance is merged, and apparent conflicts are resolved through context-specific decision rules. For example, it tells the agent when a simple transaction script is enough, when richer domain modeling is justified, when production resilience matters more than ideal-path elegance, and how to preserve behavior during refactoring.
+
+Use it when you want one broad default for general engineering work. Do not usually enable it together with every individual book rule set; that duplicates context and can make the agent less consistent. If a task needs a strong specialized lens, use `unified-software-engineering` alone or pair it with one focused rule set such as `release-it`, `refactoring`, or `working-effectively-with-legacy-code`.
+
 ## Choosing Rules
 
 Do not enable all rules at once.
@@ -111,6 +128,7 @@ Reasons:
 
 Choose rules based on the task:
 
+- broad default: `unified-software-engineering`
 - everyday code quality: `clean-code`, `code-complete`
 - architecture and boundaries: `clean-architecture`, `domain-driven-design`, `patterns-of-enterprise-application-architecture`
 - domain modeling: `domain-driven-design`, `domain-driven-design-distilled`, `implementing-domain-driven-design`
