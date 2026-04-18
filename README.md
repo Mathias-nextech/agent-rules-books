@@ -242,4 +242,4 @@ See [LICENSE](LICENSE) for details.
 
 ## Author
 
-Maciej Ciemborowicz
+[Maciej Ciemborowicz](https://maciej-ciemborowicz.eu)
