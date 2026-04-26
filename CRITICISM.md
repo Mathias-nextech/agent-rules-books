@@ -114,6 +114,10 @@ This is potentially important, but difficult to evaluate without legal analysis.
 
 We improved the framing in [README.md](README.md): the repository now says these files are practical engineering instructions inspired by the books, not official materials, not substitutes for the books, and not reproductions of book text. That is a safer product framing. But this is still not legal advice, and the repo still has no legal review. The underlying concern remains only partially addressed.
 
+**Resolution policy: won't fix.**
+
+This repository will keep the safer framing and avoid presenting the files as book replacements, but it will not attempt to provide formal legal clearance or legal analysis inside the project itself.
+
 ### 12. The LLM may already know these books
 
 **Validity: 5/10**
